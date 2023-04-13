@@ -1,0 +1,14 @@
+.hr-1 {
+    margin-top: 40px;
+    height: 1px;
+    width: 155px;
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+}
+
+.hr-2 {
+    height: 1px;
+    width: 100%;
+    background: #e6e8ec;
+    opacity: .8;
+    margin-top: 100px;
+}

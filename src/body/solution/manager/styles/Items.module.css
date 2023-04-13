@@ -1,0 +1,25 @@
+.left {
+    width: 40%;
+}
+
+.right {
+    margin-bottom: -118px;
+}
+
+.items {
+    position: relative;
+}
+
+.title {
+    font-family: Bold, serif;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 17px;
+    font-family: Medium, serif;
+
+    margin-top: 3px;
+}

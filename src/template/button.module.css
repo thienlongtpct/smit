@@ -1,0 +1,125 @@
+.hover:hover {
+    opacity: .8
+}
+
+.bgMain {
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+}
+
+.buttonMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    font-family: Bold;
+    font-size: 15px;
+    line-height: 16px;
+
+    color: #fff;
+
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 13px 0;
+
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    position: relative;
+    gap: 5px;
+
+    background-image: linear-gradient(103.17deg,#44c3f9 -6.17%,#27e4a0 104.04%);
+}
+
+.buttonMain span.arrow:after {
+    content: "";
+
+    display: inline-block;
+
+    mask-image: url("/public/images/index/arrow-white.svg");
+    -webkit-mask-image: url("/public/images/index/arrow-white.svg");
+    background: #fff;
+
+    width: 10px;
+    height: 11px;
+
+    margin-left: 5px;
+}
+
+.buttonMain:before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+
+    margin: -1px;
+
+    border-radius: inherit;
+}
+
+.buttonMain:hover {
+    background-clip: padding-box;
+    background-image: none;
+    background-color: #fff
+}
+
+.buttonMain:hover span {
+    background: linear-gradient(103.17deg,#44c3f9 -6.17%,#27e4a0 104.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttonMain:hover span.arrow:after {
+    background: linear-gradient(103.17deg,#44c3f9 -6.17%,#27e4a0 104.04%)
+}
+
+.buttonMain:hover:before {
+    background-image: linear-gradient(103.17deg,#44c3f9 -6.17%,#27e4a0 104.04%)
+}
+
+.arrow:after {
+    content: "";
+
+    display: inline-block;
+
+    mask-image: url("/public/images/index/arrow-white.svg");
+    -webkit-mask-image: url("/public/images/index/arrow-white.svg");
+
+    width: 10px;
+    height: 11px;
+
+    margin-left: 5px;
+
+    background: #fff;
+}
+
+.titleSpace {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+
+    width: 60%;
+}
+
+.fontSpace {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.itemBox {
+    width: 100%;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    transition: box-shadow .3s;
+
+    z-index: 1;
+}
+
+.itemBox:hover {
+    box-shadow: 0 17px 32px #0000000a
+}

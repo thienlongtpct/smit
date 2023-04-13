@@ -1,0 +1,21 @@
+:root {
+  --padding: 300px
+}
+
+@media only screen and (max-width: 1800px) {
+  :root {
+    --padding: 150px
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  :root {
+    --padding: 50px
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --padding: 20px
+  }
+}

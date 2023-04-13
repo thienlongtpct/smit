@@ -1,0 +1,31 @@
+.items {
+    margin-top: 44px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 50px;
+    margin-top: 18px;
+
+    width: calc(33.3333333333% - 10px);
+}
+
+.title {
+    margin-top: 30px;
+
+    font-family: Bold, serif;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.desc {
+    color: #777e90;
+
+    font-size: 15px;
+    line-height: 19px;
+
+    margin-top: 9px;
+}

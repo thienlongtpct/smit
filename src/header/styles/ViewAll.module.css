@@ -1,0 +1,69 @@
+.viewAllOuter {
+    display: inline-block;
+
+    margin: 32px auto auto;
+    padding: 10px 13px;
+
+    border: 1px solid rgba(255,255,255,.74);
+    border-radius: 56px;
+    box-shadow: 0 4px 47px #ffffff91;
+
+    font-family: Bold;
+
+    background: rgba(255,255,255,.09);
+
+    transition: all .2s;
+}
+
+.viewAllOuter:hover {
+    background: rgba(255, 255, 255, .6);
+}
+
+.viewAllInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+
+    box-shadow: 0 10px 99px #00000014, 0 4px 31px #00f0ff, 0 10px 39px #00000014;
+    border-radius: 37px;
+
+    padding: 12px 22px;
+}
+
+.viewAllOuter:hover .viewAllInner {
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+}
+
+.viewAllInner i {
+    mask-image: url("/public/images/index/watch-all.svg");
+    -webkit-mask-image: url("/public/images/index/watch-all.svg");
+
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%)
+}
+
+.viewAllOuter:hover .viewAllInner i {
+    background: #fff;
+}
+
+.viewAllInner span {
+    font-size: 20px;
+    line-height: 26px;
+
+    letter-spacing: -.01em;
+
+    margin-left: 6px;
+
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.viewAllOuter:hover .viewAllInner span {
+    -webkit-text-fill-color: #fff
+}

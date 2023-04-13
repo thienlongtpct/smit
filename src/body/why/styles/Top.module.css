@@ -1,0 +1,19 @@
+.right {
+    font-family: "Medium", serif;
+    font-size: 20px;
+    line-height: 45px;
+
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    cursor: pointer;
+    height: fit-content;
+    position: relative;
+    width: fit-content;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
