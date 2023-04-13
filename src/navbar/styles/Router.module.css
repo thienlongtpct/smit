@@ -1,0 +1,19 @@
+.router {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 60%;
+    height: 100%;
+
+    color: #777e90;
+    font-family: Medium, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.homepage {
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

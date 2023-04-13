@@ -1,9 +1,9 @@
-import navbarStyles from './index.module.css';
+import navButtonStyles from '../styles/NavButton.module.css';
 
-export default function NavButton({link, children}) {
-    return (
-        <a href={link} target="_blank" className={navbarStyles.item}>
-            {children}
-        </a>
-    )
-}
+const NavButton = ({link, children}) => (
+    <a href={link} className={navButtonStyles.item} rel="noreferrer">
+        {children}
+    </a>
+);
+
+export default NavButton;

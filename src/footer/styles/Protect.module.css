@@ -1,0 +1,23 @@
+.company {
+    font-family: Medium, sans-serif;
+}
+
+.badge {
+    display: flex;
+    gap: 10px;
+}
+
+.dmcaBadge {
+    transform: translateY(-5px);
+
+    margin-right: 10px;
+}
+
+.lang {
+    cursor: pointer;
+}
+
+.selected {
+    font-family: Medium, sans-serif;
+    color: #000;
+}

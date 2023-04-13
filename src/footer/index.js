@@ -1,33 +1,17 @@
-import navbarStyles from './index.module.css';
-import commonStyles from '../template/common.module.css';
+import footerStyles from './index.module.css';
 
-import Router from "./js/Router";
+import Top from "./js/Top";
+import Protect from "./js/Protect";
+import Info from "./js/Info";
+import Mid from "./js/Mid";
 
-const AuthButton = () => {
-    const handleClick = (e) => {
-        e.preventDefault();
-        window.location.href = process.env.REACT_APP_LINK;
-    }
-
-    return (
-        <button className={`${commonStyles.hover} ${commonStyles.bgMain} ${navbarStyles.login}`} onClick={handleClick}>
-            Sign in
-        </button>
-    );
-}
-
-const Logo = () => (
-    <a href={process.env.REACT_APP_LINK} className={navbarStyles.logo}>
-        <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="SMIT logo"/>
-    </a>
+const Footer = () => (
+    <div className={footerStyles.footer}>
+        <Top/>
+        <Mid/>
+        <Protect/>
+        <Info/>
+    </div>
 )
 
-export default function Navbar() {
-    return (
-        <div className={navbarStyles.navbar}>
-            <Logo/>
-            <Router/>
-            <AuthButton/>
-        </div>
-    )
-}
+export default Footer;

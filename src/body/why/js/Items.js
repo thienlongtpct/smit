@@ -1,5 +1,5 @@
-import commonStyles from '../../template/common.module.css';
-import itemsStyles from './styles/Items.module.css';
+import commonStyles from '../../../template/common.module.css';
+import itemsStyles from '../styles/Items.module.css';
 
 const Item = ({id, title, desc}) => (
     <div className={`${itemsStyles.item} ${commonStyles.itemBox}`}>
@@ -9,7 +9,7 @@ const Item = ({id, title, desc}) => (
     </div>
 )
 
-export default function Items() {
+const Items = () => {
     const items = [
         {
             title: "Save time",
@@ -39,7 +39,9 @@ export default function Items() {
 
     return (
         <div className={itemsStyles.items}>
-            {items.map((item, id) => <Item key={id} id={id} title={item.title} desc={item.desc}/>)}
+            {items.map(({title, desc}, id) => <Item key={id} id={id} title={title} desc={desc}/>)}
         </div>
     )
 }
+
+export default Items;

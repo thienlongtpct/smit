@@ -1,29 +1,35 @@
-import supportStyles from '../index.module.css';
+import itemsStyles from '../styles/Items.module.css';
 
 import Item from "./Item";
 
-export default function Items() {
+const Items = () => {
     const items = [
         {
-            image: "sp-translator",
-            title: "SMIT Translator",
-            desc: "Translate the conversation automatically. Multi-language and cross-platform support: Pancake, Nobita, or Smax"
+            avatar: "martech-avatar-1",
+            title: "Duong Manh Kien",
+            desc: "Theanh28 Entertainment Deputy Director",
+            desc2: "In the community of Facebook Ads advertisers, SMIT always shows us the enthusiasm and professionalism in each service or product that SMIT is providing. Through these things, we I understand that, SMIT has and is having a young, enthusiastic and passionate staff in the field of software engineering."
         },
         {
-            image: "sp-cookie",
-            title: "SMIT Cookies",
-            desc: "Manage multiple cookies on the same browser and on multiple devices through cloud data synchronization"
+            avatar: "martech-avatar-2",
+            title: "Tinh Nguyen",
+            desc: "Co-Founder Ladipage Vietnam",
+            desc2: "After a period of experience with Ads Check by SMIT, I confirm that this is a superior tool trusted and trusted by advertisers. Whether individuals or businesses should choose products because comprehensive support to run effective ads. You can easily build smarter Ads campaigns with outstanding functions!"
         },
         {
-            image: "sp-findid",
-            title: "Find Facebook ID",
-            desc: "Tool to look up ID through Facebook account link"
+            avatar: "martech-avatar-3",
+            title: "Luu Thien An",
+            desc: "Founder HAS Agency",
+            desc2: "Since using Ads Check by SMIT, I have noticed a clear effect when checking all information simply, quickly and easily. Ad accounts are also protected. and give the cause of disabling the display completely free of charge."
         }
     ];
 
     return (
-        <div className={supportStyles.items}>
-            {items.map((item, id) => <Item key={id} image={item.image} title={item.title} desc={item.desc}/>)}
+        <div className={itemsStyles.items}>
+            {items.map(({avatar, title, desc, desc2}, id) => <Item key={id} avatar={avatar} title={title} desc={desc}
+                                                                   desc2={desc2}/>)}
         </div>
     )
 }
+
+export default Items;

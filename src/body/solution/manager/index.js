@@ -1,11 +1,13 @@
-import Title from "./Title";
-import Items from "./Items";
+import Title from "../js/Title";
+import Item1 from "./js/Item1";
+import Item2 from "./js/Item2";
 
-const Solution = () => (
+const Manager = () => (
     <div>
-        <Title/>
-        <Items/>
+        <Title>Management solution</Title>
+        <Item1/>
+        <Item2/>
     </div>
 )
 
-export default Solution;
+export default Manager;

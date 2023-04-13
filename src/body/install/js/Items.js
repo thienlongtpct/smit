@@ -2,7 +2,7 @@ import supportStyles from '../index.module.css';
 
 import Item from "./Item";
 
-export default function Items() {
+const Items = () => {
     const items = [
         {
             image: "sp-translator",
@@ -27,3 +27,5 @@ export default function Items() {
         </div>
     )
 }
+
+export default Items;

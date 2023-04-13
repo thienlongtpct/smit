@@ -4,13 +4,13 @@
     margin: 32px auto auto;
     padding: 10px 13px;
 
-    border: 1px solid rgba(255,255,255,.74);
+    border: 1px solid rgba(255, 255, 255, .74);
     border-radius: 56px;
     box-shadow: 0 4px 47px #ffffff91;
 
     font-family: Bold;
 
-    background: rgba(255,255,255,.09);
+    background: rgba(255, 255, 255, .09);
 
     transition: all .2s;
 }

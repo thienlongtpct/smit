@@ -1,34 +1,19 @@
-import {styles as commonStyles} from "./common";
+import commonStyles from '../template/common.module.css';
+import headerStyles from './index.module.css';
 
-import ViewAll from "./ViewAll";
-import {Background} from "./Background";
+import ViewAll from "./js/ViewAll";
+import Background from "./js/Background";
 
-export default function Header() {
-    const styles = {
-        header: {
-            overflow: "hidden"
-        },
-        hero: {
-            position: "absolute",
-            zIndex: 1,
-
-            color: "#fff",
-            textAlign: "center",
-
-            width: "100%",
-            marginTop: "200px",
-            padding: "0 150px",
-        }
-    }
-    return (
-        <div style={styles.header}>
-            <div className="hero aos-init aos-animate" style={styles.hero}>
-                <div style={commonStyles.ranking}>#1 Vietnam</div>
-                <div style={commonStyles.title}>Professional Advertising <br/> Solutions</div>
-                <div style={commonStyles.subtitle}>Increase your productivity by up to 60%</div>
-                <ViewAll />
-            </div>
-            <Background />
+const Header = () => (
+    <div className={headerStyles.header}>
+        <div className={headerStyles.hero}>
+            <div className={`${commonStyles.bgMain} ${headerStyles.rank}`}>#1 Vietnam</div>
+            <div className={headerStyles.title}>Professional Advertising <br/> Solutions</div>
+            <div className={headerStyles.desc}>Increase your productivity by up to 60%</div>
+            <ViewAll/>
         </div>
-    )
-}
+        <Background/>
+    </div>
+);
+
+export default Header;

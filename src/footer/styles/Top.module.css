@@ -1,30 +1,8 @@
-.protect {
-    padding-bottom: 20px;
+.image {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
+    gap: 33px;
 }
 
-.protectCompany {
-    font-family: Medium, serif;
-}
-
-.protectLang {
-    display: flex;
-    gap: 10px;
-}
-
-.dmcaBadge {
-    transform: translateY(-5px);
-    margin-right: 10px;
-}
-
-.lang {
+.image img {
     cursor: pointer;
-}
-
-.selected {
-    font-family: Medium, serif;
-    color: #000;
 }

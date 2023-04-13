@@ -1,5 +1,5 @@
 .right {
-    font-family: "Medium", serif;
+    font-family: "Medium", sans-serif;
     font-size: 20px;
     line-height: 45px;
 
@@ -11,6 +11,31 @@
     height: fit-content;
     position: relative;
     width: fit-content;
+}
+
+.right:after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 1.5px;
+    width: 0;
+
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+
+    opacity: 0;
+
+    transition: opacity .3s, width .8s;
+
+    overflow: hidden;
+}
+
+.right:hover:after {
+    width: 100%;
+
+    opacity: 1
 }
 
 .top {

@@ -21,7 +21,7 @@
     margin-top: 23px;
 }
 
-.customizedButton {
+.customizedButton, .customizedButton:hover {
     background: rgb(230, 232, 236);
 
     margin-top: 30px;

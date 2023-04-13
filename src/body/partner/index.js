@@ -1,11 +1,15 @@
-import Items from "./js/Items";
-import Title from "../js/Title";
+import partnerStyles from './index.module.css';
 
-const Support = () => (
+import Logos from "./js/Logos";
+
+const Partner = () => (
     <div>
-        <Title>Support solution</Title>
-        <Items />
+        <div className={partnerStyles.title}>Partners of SMIT</div>
+        <div className={partnerStyles.desc}>Become one of our partners to gain access to a universe of fresh
+            possibilities.
+        </div>
+        <Logos/>
     </div>
 )
 
-export default Support;
+export default Partner;

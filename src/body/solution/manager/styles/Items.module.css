@@ -11,7 +11,7 @@
 }
 
 .title {
-    font-family: Bold, serif;
+    font-family: Bold, sans-serif;
     font-size: 36px;
     line-height: 36px;
 }
@@ -19,7 +19,7 @@
 .desc {
     font-size: 16px;
     line-height: 17px;
-    font-family: Medium, serif;
+    font-family: Medium, sans-serif;
 
     margin-top: 3px;
 }

@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    cursor: pointer;
+
+    transition: color .2s;
+}
+
+.item:hover {
+    color: #585858;
+}
+
+.list {
+    cursor: default;
+}
+
+.list:after {
+    content: "";
+    display: inline-block;
+
+    mask-image: url("/public/images/navbar/arrow-down.svg");
+    -webkit-mask-image: url("/public/images/navbar/arrow-down.svg");
+
+    background: currentColor;
+
+    width: 12px;
+    height: 7px;
+    margin-left: 5px;
+}

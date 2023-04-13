@@ -1,0 +1,33 @@
+.follow {
+    display: flex;
+    align-items: center;
+
+    height: 700px;
+    width: 100%;
+
+    margin-top: 140px;
+    padding: 0 var(--padding);
+
+    background-image: url("/public/images/index/follow-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+}
+
+.in {
+    width: 60%;
+}
+
+.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 48px;
+    line-height: 51px;
+}
+
+.desc {
+    font-size: 20px;
+    line-height: 26px;
+
+    margin-top: 9px;
+}

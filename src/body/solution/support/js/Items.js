@@ -1,18 +1,8 @@
-import commonStyles from '../../../template/common.module.css';
-import supportStyles from './styles/index.module.css';
+import itemsStyles from '../styles/Items.module.css';
 
-const Item = ({image, title, desc}) => (
-    <div className={`${supportStyles.item} ${commonStyles.itemBox}`}>
-        <img src={process.env.PUBLIC_URL + "/images/index/" + image + ".svg"} alt=""/>
-        <div className={supportStyles.title}>{title}</div>
-        <div className={supportStyles.desc}>{desc}</div>
-        <button className={commonStyles.buttonMain} style={{ marginTop: "auto"}}>
-            <span className={commonStyles.arrow}>Try</span>
-        </button>
-    </div>
-)
+import Item from "./Item";
 
-export default function Items() {
+const Items = () => {
     const items = [
         {
             image: "sp-translator",
@@ -32,8 +22,10 @@ export default function Items() {
     ];
 
     return (
-        <div className={supportStyles.items}>
-            {items.map((item, id) => <Item key={id} image={item.image} title={item.title} desc={item.desc}/>)}
+        <div className={itemsStyles.items}>
+            {items.map(({image, title, desc}, id) => <Item key={id} image={image} title={title} desc={desc}/>)}
         </div>
     )
 }
+
+export default Items;

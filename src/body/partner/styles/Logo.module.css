@@ -19,6 +19,6 @@
     transition: box-shadow .2s;
 }
 
-.logoColor {
-
+.logo:hover {
+    box-shadow: 0 35px 64px -17px #0003;
 }

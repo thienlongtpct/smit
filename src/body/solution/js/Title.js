@@ -1,9 +1,9 @@
-import commonStyles from '../../../../template/common.module.css';
-import solutionStyles from '../../index.module.css';
+import commonStyles from '../../../template/common.module.css';
+import solutionStyles from '../index.module.css';
 
-const Title = () => (
+const Title = ({children}) => (
     <div className={`${solutionStyles.title} ${commonStyles.fontSpace}`}>
-        Management solution
+        {children}
     </div>
 )
 

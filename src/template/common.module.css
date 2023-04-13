@@ -1,0 +1,36 @@
+.hover:hover {
+    opacity: .8
+}
+
+.bgMain {
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+}
+
+.titleSpace {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+
+    width: 60%;
+}
+
+.fontSpace {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.itemBox {
+    width: 100%;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    transition: box-shadow .3s;
+
+    z-index: 1;
+}
+
+.itemBox:hover {
+    box-shadow: 0 17px 32px #0000000a
+}

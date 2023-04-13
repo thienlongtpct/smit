@@ -1,0 +1,31 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+    margin-top: 40px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #e6e8ec;
+}
+
+.item:hover {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title {
+    font-size: 20px;
+
+    background: linear-gradient(103.17deg, #44c3f9 -6.17%, #27e4a0 104.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,11 +1,15 @@
-import Items from "./js/Items";
-import Title from "../js/Title";
+import templateStyles from "../../template/hr.module.css";
+import martechStyles from "./index.module.css";
 
-const Support = () => (
-    <div>
-        <Title>Support solution</Title>
-        <Items />
+import Top from "./js/Top";
+import Items from "./js/Items";
+
+const Martech = () => (
+    <div className={martechStyles.martech}>
+        <Top/>
+        <div className={templateStyles.hr1}/>
+        <Items/>
     </div>
 )
 
-export default Support;
+export default Martech;
